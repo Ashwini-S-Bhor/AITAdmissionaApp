@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+
+<table class="enquiry-table">
+
+    <thead>
+
+    <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Course</th>
+        <th>Number</th>
+        <th>Enquiry Date</th>
+        <th>Status</th>
+        <th>Action</th>
+    </tr>
+
+    </thead>
+
+    <tbody>
+
+    <tr th:each="enquiry, stat : ${student}">
+
+        <td th:text="${stat.count}"></td>
+
+        <td th:text="${enquiry.studentName}"></td>
+
+        <td th:text="${enquiry.courseName}"></td>
+
+        <td th:text="${enquiry.studentPhno}"></td>
+
+        <td th:text="${enquiry.createDate}"></td>
+
+        <td th:text="${enquiry.enquiryStatus}"></td>
+
+        <td>
+            <a th:href="@{/edit(enquiryId=${enquiry.enquiryId})}">
+                EDIT
+            </a>
+        </td>
+
+    </tr>
+
+    <tr th:if="${#lists.isEmpty(student)}">
+
+        <td colspan="7">
+            No enquiries found
+        </td>
+
+    </tr>
+
+    </tbody>
+
+</table>
+
+</body>
+</html>

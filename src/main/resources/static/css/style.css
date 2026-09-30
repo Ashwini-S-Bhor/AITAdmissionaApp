@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    height: 75px;
+}
+
+.logo {
+    width: 175px;
+    height: auto;
+}
+
+.nav-link {
+    color: #555 !important;
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+.nav-link:hover {
+    color: #198754 !important;
+}
+
+
+.login-btn {
+    background-color: #e74c4c;
+    color: white;
+    border: none;
+    padding: 8px 17px;
+    border-radius: 5px;
+}
+
+.login-btn:hover {
+    background-color: #c0392b;
+    color: white;
+}
+
+
+
+/* ================= BANNER ================= */
+
+.banner-section {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.banner-section img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+/* ================= COURSES ================= */
+
+.trending-title {
+    text-align: center;
+
+    font-size: 28px;
+
+    font-weight: 600;
+
+    margin-top: 35px;
+
+    margin-bottom: 25px;
+
+    color: #333;
+}
+
+
+.course-card {
+    height: 120px;
+
+    overflow: hidden;
+
+    border: none;
+}
+
+
+.course-card img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    margin-top: 25px;
+
+    padding: 10px;
+
+    text-align: center;
+
+    color: #777;
+
+    font-size: 13px;
+}
